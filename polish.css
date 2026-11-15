@@ -1,0 +1,13 @@
+/* polish.css - style.css ke BAAD load hoga. Halka, saaf aur asaan look. */
+body { font-family: system-ui, -apple-system, "Segoe UI", "Noto Naskh Arabic", Tahoma, Arial, sans-serif; }
+:root { --shadow: 0 4px 14px rgba(22,55,35,.06); }
+.btn, .nav-btn, .person-result { transition: background .15s, border-color .15s, transform .1s; }
+.btn:active { transform: scale(.97); }
+.nav-btn.active { box-shadow: inset -3px 0 0 var(--green); }
+.card { border-radius: 14px; }
+tbody tr:hover td { background: #f8fbf9; }
+th { position: sticky; top: 0; }
+.table-wrap { max-height: 70dvh; }
+.modal, .toast { animation: pop .18s ease-out; }
+@keyframes pop { from { transform: translateY(12px); opacity: .5; } to { transform: none; opacity: 1; } }
+@media (prefers-reduced-motion: reduce) { * { animation: none !important; transition: none !important; } }
